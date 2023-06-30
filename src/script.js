@@ -33,6 +33,7 @@ const envMap = cubeTextureLoader.load([
     '/environmentMaps/0/nz.png'
 ])
 scene.background = envMap
+scene.environment = envMap
 
 /**
  * Torus Knot
