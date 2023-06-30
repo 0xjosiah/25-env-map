@@ -36,8 +36,8 @@ scene.add(torusKnot)
 gltfLoader.load(
     '/models/FlightHelmet/glTF/FlightHelmet.gltf', 
     (gltf) => {
-        console.log(gltf)
-        console.log('success')
+        gltf.scene.scale.set(10, 10, 10)
+        scene.add(gltf.scene)
     }
 )
 
