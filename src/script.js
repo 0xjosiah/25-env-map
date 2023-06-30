@@ -22,6 +22,19 @@ const canvas = document.querySelector('canvas.webgl')
 const scene = new THREE.Scene()
 
 /**
+ * Evn Maps
+ */
+const envMap = cubeTextureLoader.load([
+    '/environmentMaps/0/px.png',
+    '/environmentMaps/0/nx.png',
+    '/environmentMaps/0/py.png',
+    '/environmentMaps/0/ny.png',
+    '/environmentMaps/0/pz.png',
+    '/environmentMaps/0/nz.png'
+])
+scene.background = envMap
+
+/**
  * Torus Knot
  */
 const torusKnot = new THREE.Mesh(
